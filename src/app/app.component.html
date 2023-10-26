@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="mt-10 mb-5">
+  .
+</div>
+
+<div class="container">
+  <div class="row px-8 py-2 bg-dark text-white">
+      <div class="col-md-6 my-auto ">
+         <a class="text-decoration-none"  href="https://react-minds-getting-started.vercel.app/"> <span > 
+          Home    
+      </span></a><span>  ></span> <a class="text-decoration-none" href="https://react-minds.vercel.app/docs"> <span> Docs </span></a><span>></span> <a href="" class="text-decoration-none"> <span> Your First React App </span></a>
+      </div>
+      <div class="col-md-6 d-none d-md-flex justify-content-end align-items-center">
+         
+          <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" id="menu-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+  </label>
+  <nav id="menu" class="mt-10">
+      <ul>
+          <br><br><br><br>
+          <li><a [routerLink]="[{ outlets: { secondary: ['devlopmentenvironment'] } }]">Setting Up Devlopment Environment</a></li>
+          <li><a [routerLink]="[{ outlets: { secondary: ['firstreactapp'] } }]">Create New React App</a></li>
+          <li><a [routerLink]="[{ outlets: { secondary: ['startserver'] } }]">Starting Devlopment Server</a></li>
+          <li><a [routerLink]="[{ outlets: { secondary: ['exploreapp'] } }]">Explore Your React App </a></li>
+          <li><a [routerLink]="[{ outlets: { secondary: ['helloworld'] } }]">Simple Hello World App</a></li>
+      </ul>
+  </nav>
+      </div>
+  </div>
+</div>
+
+
+<div class="bg-light mx-auto">
+  <div class="mx-4 py-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+          <div class="col-12 col-sm-8 col-md-3 mx-auto">
+              <div class="bg-white shadow p-4 rounded">
+                  <a class="text-decoration-none" [routerLink]="[{ outlets: { secondary: ['devlopmentenvironment'] } }]"><p class="text-center">Setting Up Devlopment Environment</p><hr></a>
+                  <a class="text-decoration-none" [routerLink]="[{ outlets: { secondary: ['firstreactapp'] } }]"><p class="text-center">Create New React App</p><hr></a>
+                  <a class="text-decoration-none" [routerLink]="[{ outlets: { secondary: ['startserver'] } }]"><p class="text-center">Starting Devlopment Server</p><hr></a>
+                  <a class="text-decoration-none" [routerLink]="[{ outlets: { secondary: ['exploreapp'] } }]"><p class="text-center">Explore Your React App</p><hr></a>
+                  <a class="text-decoration-none" [routerLink]="[{ outlets: { secondary: ['helloworld'] } }]"><p class="text-center">Simple Hello World App</p><hr></a>
+     
+                  
+              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-9">
+              <div class="bg-white shadow p-4 rounded">
+                  <!-- main content -->
+                  <router-outlet name="secondary" ></router-outlet>
+                  
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
