@@ -1,1 +1,146 @@
-<p>helloworld works!</p>
+<h1 class="text-center">Lets get started With Hello world</h1>
+<br>
+<ul>
+    <li>
+        <h5>
+            Setting Up Your Environment
+        </h5>
+        <p>
+            Before you begin, make sure you have Node.js and npm (Node Package Manager) installed on your computer. You can download them from the official website if you haven't already.
+        </p>
+    </li>
+    <li>
+        <h5>
+            Create a New React App
+        </h5>
+        <p>
+            To create a new React app, open your terminal and run the following command:
+        </p>
+
+        <div class="bg-dark rounded text-white border   ">
+            <div class="bg-secondary rounded d-flex justify-content-end text-white ">
+                <button type="button" class="btn text-white  d-flex justify-content-center align-items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z" />
+                    </svg>
+                    &nbsp;Copy</button>
+            </div>
+            <div class="p-3">
+                npx create-react-app hello-world-app
+
+    
+    
+            </div>
+        </div>
+
+        <p>
+            This command will create a new directory called "hello-world-app" with all the necessary files and dependencies to start building your React app.
+        </p>
+    </li>
+
+    <li>
+        <h5>
+            Navigate to Your Project Folder
+        </h5>
+        <p>
+            Use the cd command to navigate into your project folder:
+        </p>
+        <div class="bg-dark rounded text-white border   ">
+            <div class="bg-secondary rounded d-flex justify-content-end text-white ">
+                <button type="button" class="btn text-white  d-flex justify-content-center align-items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z" />
+                    </svg>
+                    &nbsp;Copy</button>
+            </div>
+            <div class="p-3">
+                cd hello-world-app
+
+
+    
+    
+            </div>
+        </div>
+    </li>
+<br>
+    <li>
+        <h5>
+            Edit the App Component
+        </h5>
+        <p>
+            Now, open the src/App.js file in your text editor. You'll see the default React component there. Replace the content of App.js with the following code:
+        </p>
+        <div class="bg-dark rounded text-white border   ">
+            <div class="bg-secondary rounded d-flex justify-content-end text-white ">
+                <button type="button" class="btn text-white  d-flex justify-content-center align-items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z" />
+                    </svg>
+                    &nbsp;Copy</button>
+            </div>
+            <div class="p-3">
+                
+                <pre>
+                    <code>
+                      import React from 'react';
+                
+                      function App() {{'{'}}
+                        return (
+                          &lt;div&gt;
+                            &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                          &lt;/div&gt;
+                        );
+                      {{'}'}}
+                
+                      export default App;
+                    </code>
+                    </pre>
+
+
+    
+    
+            </div>
+        </div>
+    </li>
+    <br>
+    <li>
+        <h5>
+            Start the Development Server
+        </h5>
+        <p>To see your React app in action, go back to your terminal and run the following command:</p>
+        <div class="bg-dark rounded text-white border   ">
+            <div class="bg-secondary rounded d-flex justify-content-end text-white ">
+                <button type="button" class="btn text-white  d-flex justify-content-center align-items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z" />
+                    </svg>
+                    &nbsp;Copy</button>
+            </div>
+            <div class="p-3">
+                
+                npm start
+            </div>
+        </div>
+        <p>This will start the development server, and your app will open in your default web browser at <a href="http://localhost:3000
+
+            ">http://localhost:3000
+
+        </a>.</p>
+    </li>
+</ul>
