@@ -7,6 +7,7 @@ import { HelloworldComponent } from './mycomponents/helloworld/helloworld.compon
 import { StartserverComponent } from './mycomponents/startserver/startserver.component';
 
 const routes: Routes = [
+  { path: '', component: DevlopmentenvironmentComponent, outlet: 'secondary' },
   { path: 'devlopmentenvironment', component: DevlopmentenvironmentComponent, outlet: 'secondary' },
   { path: 'exploreapp', component: ExploreappComponent, outlet: 'secondary' },
   { path: 'firstreactapp', component: FirstreactappComponent, outlet: 'secondary' },
