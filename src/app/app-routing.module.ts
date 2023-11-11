@@ -5,6 +5,9 @@ import { ExploreappComponent } from './mycomponents/exploreapp/exploreapp.compon
 import { FirstreactappComponent } from './mycomponents/firstreactapp/firstreactapp.component';
 import { HelloworldComponent } from './mycomponents/helloworld/helloworld.component';
 import { StartserverComponent } from './mycomponents/startserver/startserver.component';
+import { MycompilerComponent } from './mycomponents/mycompiler/mycompiler.component';
+import { YoutubeComponent } from './mycomponents/youtube/youtube.component';
+import { QuizComponent } from './mycomponents/quiz/quiz.component';
 
 const routes: Routes = [
   { path: '', component: DevlopmentenvironmentComponent, outlet: 'secondary' },
@@ -13,6 +16,9 @@ const routes: Routes = [
   { path: 'firstreactapp', component: FirstreactappComponent, outlet: 'secondary' },
   { path: 'helloworld', component: HelloworldComponent, outlet: 'secondary' },
   { path: 'startserver', component: StartserverComponent, outlet: 'secondary' },
+  { path: 'quiz', component: QuizComponent, outlet: 'secondary' },
+  { path: 'mycompiler', component: MycompilerComponent, outlet: 'secondary' },
+  { path: 'youtube', component: YoutubeComponent, outlet: 'secondary' },
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './mycomponents/header/header.component';
@@ -10,6 +10,10 @@ import { StartserverComponent } from './mycomponents/startserver/startserver.com
 import { ExploreappComponent } from './mycomponents/exploreapp/exploreapp.component';
 import { HelloworldComponent } from './mycomponents/helloworld/helloworld.component';
 
+import { MycompilerComponent } from './mycomponents/mycompiler/mycompiler.component';
+import { QuizComponent } from './mycomponents/quiz/quiz.component';
+import { YoutubeComponent } from './mycomponents/youtube/youtube.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +22,15 @@ import { HelloworldComponent } from './mycomponents/helloworld/helloworld.compon
     FirstreactappComponent,
     StartserverComponent,
     ExploreappComponent,
-    HelloworldComponent
+    HelloworldComponent,
+    QuizComponent,
+    YoutubeComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
